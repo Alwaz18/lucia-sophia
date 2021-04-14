@@ -64,9 +64,9 @@ function product({ detail }) {
                         <m.div variants={container}
                             initial="hidden"
                             animate="visible"
-                            className="self-start justify-self-start w-full px-4  md:px-0 md:w-5/12 min-h-full divide-y divide-solid divide-red-600 ">
+                            className="self-start justify-self-start w-full px-4  lg:px-0 md:w-5/12 min-h-full divide-y divide-solid divide-red-600 ">
 
-                            <div className="flex flex-col items-start md:m-0  cursor-pointer">
+                            <div className="flex flex-col items-start md:mt-0 mt-5  cursor-pointer">
                                 <h3 className="md:m-0 my-1 txt-main custom-montserrat font-semibold text-base md:text-xl lg:text-2xl md:py-2 align-self-baseline ">
                                     {title}</h3>
                                 {pNew && <span className="m-2 px-2 py-1 rounded-xl text-gray-700 shadow-md custom-montserrat md:font-bold font-medium text-xs animate-bounce bg-gradient-to-br from-yellow-300 to-yellow-600 cursor-pointer ">

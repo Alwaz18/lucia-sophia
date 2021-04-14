@@ -22,7 +22,7 @@ function Testomonial({ date, name, review, feature }) {
             variants={cardAnimation} animate={controls} initial='hidden'
             className="bg-gray-100 bg-opacity-40 hover:bg-opacity-30 shadow-xl hover:shadow-2xl overflow-hidden  my-10 mx-6
         translate-y-0 transform transition duration-500 ease-in-out  hover:translate-y-2 cursor-pointer
-        md:w-2/6 w-5/6 flex flex-col items-start justify-between px-6 py-4  rounded-xl h-60">
+        md:w-2/6 w-5/6 flex flex-col items-start justify-between px-6 py-4  rounded-xl h-64 md:h-60">
             <div className="w-full">
                 <div className="w-full flex items-center justify-start m-1">
                     <span><CgProfile size={25} /></span>

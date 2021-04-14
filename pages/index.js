@@ -40,7 +40,7 @@ export default function Home({ main, Products, about }) {
 
       </Head>
 
-      <main className="min-h-full w-full ">
+      <main className="min-h-screen w-full ">
         <section className="h-full bg-fixed shadow-xl">
           <div className="relative top-0 left-0 z-0">
             <Background />

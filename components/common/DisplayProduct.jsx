@@ -74,7 +74,9 @@ function DisplayProduct({
           <p className="lg:text-sm text-xs  text-gray-900 custom-montserrat overflow-ellipsis align-top font-medium min-w-full py-2">{description}</p>
           <div className=" py-1 flex flex-wrap items-center md:h-20  justify-start  cursor-pointer">
             <Button><a rel="noopener noreferrer" target="_blank" className="lg:text-base text-xs  w-full lg:w-max center" href={link}> <BiShoppingBag/>  Buy Now </a></Button>
-            <Button><Link href={`/products/${slug}`}><a rel="noopener noreferrer " className="lg:text-base text-xs w-full lg:w-max ">View Product</a></Link></Button>
+            <Button><Link
+            passHref={true} 
+            href={`/products/${slug}`}><a rel="noopener noreferrer " className="lg:text-base text-xs w-full lg:w-max ">View Product</a></Link></Button>
           </div>
         </div>
       </div>

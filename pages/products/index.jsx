@@ -34,7 +34,7 @@ export default function allProducts({ products }) {
         animate="visible"
         className="min-h-screen w-full center flex-col "
       >
-        <div className="flex flex-wrap items-start justify-start" variants={item}>
+        <div className="flex flex-wrap items-start justify-between md:justify-start" variants={item}>
           {products.map(
             ({
               title,
