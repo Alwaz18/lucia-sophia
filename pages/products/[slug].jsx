@@ -3,8 +3,6 @@ import { GET_PRODUCT_SLUGS, GET_PRODUCT_DETAILS } from "../../lib/queries";
 import { useQuery } from '@apollo/client'
 import Head from 'next/head'
 import Button from "../../components/common/Button";
-import MarkdownIt from 'markdown-it'
-import InnerHtml from 'dangerously-set-html-content'
 import { AiFillTags } from 'react-icons/ai'
 import LogoLoader from "../../components/common/LogoLoader";
 import Slider from "../../components/Slider";
@@ -12,10 +10,11 @@ import Testomonial from "../../components/common/Testomonial";
 import { m } from "framer-motion";
 import { BiShoppingBag } from 'react-icons/bi'
 import { container } from "../../animations";
+import ReactMarkdown from "react-markdown";
 
 function product({ detail }) {
 
-    let md = new MarkdownIt()
+
 
     const {
         title,
@@ -30,8 +29,6 @@ function product({ detail }) {
         meta_description,
         productLink,
         perks } = detail
-    const mdPerks = md.render(perks)
-    const mdDesc = md.render(productDescription)
     let stockCol = inStock ? 'text-green-600' : "text-red-600"
     let stockTxt = inStock ? 'In stock' : "Out of stock"
     let imgList = []
@@ -84,7 +81,7 @@ function product({ detail }) {
 
                                 <p className="lg:text-sm text-xs  text-gray-800 custom-montserrat overflow-ellipsis align-top font-semibold min-w-full py-2">{description}</p>
                                 <article className="lg:text-sm text-xs  text-gray-800 custom-roboto overflow-ellipsis align-top font-medium min-w-full py-2">
-                                    <InnerHtml html={mdPerks} />
+                                    <ReactMarkdown source={perks} />
                                 </article>
                                 <Button><a rel="noopener noreferrer" className="lg:text-base text-xs  w-full  center" target="_blank" rel="noopener noreferrer" href={productLink}><BiShoppingBag />  Buy Now On Amazon</a></Button>
                             </div>
@@ -98,7 +95,8 @@ function product({ detail }) {
                         Product's description</h2>
 
                     <article className="lg:text-sm text-xs  text-gray-800 custom-roboto overflow-ellipsis align-top font-medium md:w-3/4  min-w-full py-2">
-                        <InnerHtml html={mdDesc} />
+                    
+                        <ReactMarkdown source={productDescription} />
                     </article>
                 </div>
                 <m.section
