@@ -4,7 +4,7 @@ module.exports = {
   },
 
   images: {
-    domains: ["res.cloudinary.com", "cloudinary.com"],
+    domains: ["res.cloudinary.com", "cloudinary.com","images.unsplash.com","unsplash.com","localhost"],
     loader:'default',
    
   },

@@ -32,9 +32,8 @@ function product({ detail }) {
     let stockCol = inStock ? 'text-green-600' : "text-red-600"
     let stockTxt = inStock ? 'In stock' : "Out of stock"
     let imgList = []
-    let makeList = image.map(({ url }) => imgList.push(url))
-    // let newImageList=[...imgList, makeList]
-    // console.log(imgList, "imgLisk", makeList,"makeList", newImageList,"newImg")
+    image.map(({ url }) => imgList.push(url))
+
     const { data, loading } = useQuery(GET_PRODUCT_DETAILS)
     if (loading) {
         <LogoLoader />
@@ -95,7 +94,7 @@ function product({ detail }) {
                         Product's description</h2>
 
                     <article className="lg:text-sm text-xs  text-gray-800 custom-roboto overflow-ellipsis align-top font-medium md:w-3/4  min-w-full py-2">
-                    
+
                         <ReactMarkdown source={productDescription} />
                     </article>
                 </div>

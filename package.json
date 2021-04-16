@@ -18,7 +18,8 @@
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
     "react-intersection-observer": "^8.31.0",
-    "react-markdown": "^5.0.3"
+    "react-markdown": "^5.0.3",
+    "react-slideshow-image": "^3.4.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
