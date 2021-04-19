@@ -35,9 +35,9 @@ export default function allProducts({ filteredProducts }) {
           variants={container}
           initial="hidden"
           animate="visible"
-          className="min-h-screen w-full center flex-col "
+          className="min-h-screen min-w-full center flex-col py-10"
         >
-          <div className="flex flex-wrap items-start justify-between md:justify-start" variants={item}>
+          <div className="flex flex-wrap h-full w-full items-start my-20 justify-between md:justify-start" variants={item}>
             {products.map(
               ({
                 title,

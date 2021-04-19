@@ -46,7 +46,7 @@ function CfTwo() {
       reset();
       toastifySuccess()
     } catch (e) {
-      console.log(e)
+      reset();
       toastifyFailed()
     }
   };
@@ -315,6 +315,7 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
             <span className="uppercase text-sm text-gray-600 font-bold">Name</span>
             <input
               type='text'
+              name="name"
               {...register("name", { required: true, maxLength: 25, message: 'Please use 25 characters or less' })}
 
 
@@ -327,7 +328,7 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
             <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
             <input
               type='email'
-
+              name="email"
               {...register("email", { required: true, pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ })}
 
               className='w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
@@ -343,7 +344,7 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
             <span className="uppercase text-sm text-gray-600 font-bold">Subject</span>
             <input
               type='text'
-
+              name="subject"
               {...register("subject", { required: true, maxLength: 75, message: 'Subject cannot exceed 75 characters' })}
 
               className='w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
@@ -359,7 +360,7 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
             <span className="uppercase text-sm text-gray-600 font-bold">Message</span>
             <textarea
               rows={3}
-
+              name="message"
               {...register("message", { required: true })}
               className='w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
 

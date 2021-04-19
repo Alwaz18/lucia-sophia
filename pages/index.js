@@ -50,11 +50,11 @@ export default function Home({ main, Products, about, video,gallery }) {
 
       <main className="min-h-screen w-full ">
         <section className="h-full bg-fixed flex min-h-screen">
-          <div className="flex flex-col justify-center items-start absolute z-10 px-14 py-10 w-full md:w-3/4 h-full">
-            <h1 className="md:text-6xl text-4xl font-semibold txt-main my-5 cursor-pointer">
+          <div className="flex flex-col justify-center items-start absolute z-10 px-6 md:px-14 pt-20 sm:py-10 w-full md:w-3/4 h-full">
+            <h1 className="md:text-6xl text-3xl sm:text-4xl font-semibold txt-main my-5 cursor-pointer">
               {main.title}
             </h1>
-            <m.h3 variants={tagL} initial="hidden" animate="visible" className="text-shd md:text-xl text-lg custom-montserrat txt-main font-semibold px-1 cursor-pointer pb-2">
+            <m.h3 variants={tagL} initial="hidden" animate="visible" className="text-shd md:text-xl text-base custom-montserrat txt-main font-semibold px-1 cursor-pointer pb-2">
               {main.tagline}
             </m.h3>
 

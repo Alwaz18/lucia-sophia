@@ -13,7 +13,7 @@ function testimonial({reviews}) {
     return (
         <section
             className="min-h-screen center flex-col pt-20">
-            <h1 className="custom-montserrat font-semibold underline txt-main text-4xl py-10">Here's what they say</h1>
+            <h1 className="custom-montserrat w-full text-center font-semibold underline txt-main text-2xl md:text-4xl py-10">Here's what they say</h1>
             <div className="w-full h-full flex flex-wrap items-center justify-around">
                 {reviews.map(({ name, date, feature, testimonial, id }) =>
                     <Testomonial key={id} name={name}
