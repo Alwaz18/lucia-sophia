@@ -38,6 +38,19 @@ export  const boxVariants = {
     }
   }
 
+  export  const gallery = {
+    hidden: {x:30 ,opacity: 0.2},
+    visible: {
+      x:0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        delayChildren: 1.5,
+        ease: "easeIn"
+      }
+    }
+  }
+
   export  const cardAnimation = {
     hidden: {opacity:0},
     visible: {

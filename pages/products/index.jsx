@@ -6,8 +6,9 @@ import { m } from "framer-motion";
 import { container, item } from "../../animations";
 import { useQuery } from '@apollo/client'
 import LogoLoader from "../../components/common/LogoLoader";
+import DropDown from "../../components/common/Dropdown";
 
-export default function allProducts({ products }) {
+export default function allProducts({ products,categories }) {
   const { data, loading, error } = useQuery(GET_ALL_PRODUCTS)
   if (loading) return <LogoLoader />
   if (error || !data) return <>error occured</>
@@ -24,9 +25,9 @@ export default function allProducts({ products }) {
 
       </Head>
     <main className="md:pt-14 pt-10 w-full min-h-screen center flex-wrap">
-      <div className="md:m-5 m-2 flex w-full items-center justify-start">
-        <h1 className="md:text-5xl underline text-2xl txt-main p-5 w-full custom-roboto ">Products</h1>
-        
+      <div className="md:m-5 m-2 flex w-full items-center justify-between"  id="category">
+        <h1 className="md:text-5xl underline text-2xl p-5 w-full font-medium custom-montserrat txt-main">Products</h1>
+      <DropDown names={categories}/>
       </div>
       <m.section
         variants={container}
@@ -76,6 +77,7 @@ export async function getStaticProps() {
   return {
     props: {
       products: data?.products,
+      categories:data?.categories
     },
     revalidate:10
   };

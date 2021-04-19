@@ -32,8 +32,8 @@ function Testomonial({ date, name, review, feature }) {
                 <p className="text-xs float-right m-1 text-gray-700 ">
                     {date}</p>
             </div>
-           <div className="justify-self-start h-full">
-           <h3 className="custom-montserrat font-semibold text-sm my-2 mx-1 py-1 text-gray-700 border-b border-red-600 ">
+           <div className="justify-self-start h-full overflow-y-auto w-full">
+           <h3 className="custom-montserrat font-semibold text-sm my-2 mx-1 py-1 text-gray-700 border-b border-yellow-500 ">
                 {feature}</h3>
             <p className="custom-roboto text-sm my-2 mx-1 py-1 text-gray-700 ">
                 {review}</p>

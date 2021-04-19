@@ -63,10 +63,10 @@ function product({ detail }) {
                         <m.div variants={container}
                             initial="hidden"
                             animate="visible"
-                            className="self-start justify-self-start w-full px-4  lg:px-0 md:w-5/12 min-h-full divide-y divide-solid divide-red-600 ">
+                            className="self-start justify-self-start w-full px-4  lg:px-0 md:w-5/12 min-h-full divide-y divide-solid divide-yellow-500 ">
 
                             <div className="flex flex-col items-start md:mt-0 mt-5  cursor-pointer">
-                                <h3 className="md:m-0 my-1 txt-main custom-montserrat font-semibold text-base md:text-xl lg:text-2xl md:py-2 align-self-baseline ">
+                                <h3 className="md:m-0 my-1 txt-main custom-montserrat font-semibold text-base md:text-2xl md:py-2 align-self-baseline ">
                                     {title}</h3>
                                 {pNew && <span className="m-2 px-2 py-1 rounded-xl text-gray-700 shadow-md custom-montserrat md:font-bold font-medium text-xs animate-bounce bg-gradient-to-br from-yellow-300 to-yellow-600 cursor-pointer ">
                                     New</span>}
@@ -78,7 +78,7 @@ function product({ detail }) {
                             </div>
                             <div className="md:m-0 my-1 align-self-center cursor-pointer overflow-ellipsis">
 
-                                <p className="lg:text-sm text-xs  text-gray-800 custom-montserrat overflow-ellipsis align-top font-semibold min-w-full py-2">{description}</p>
+                                <p className="md:text-base text-sm text-gray-800 custom-montserrat overflow-ellipsis align-top font-semibold min-w-full py-2">{description}</p>
                                 <article className="lg:text-sm text-xs  text-gray-800 custom-roboto overflow-ellipsis align-top font-medium min-w-full py-2">
                                     <ReactMarkdown source={perks} />
                                 </article>
@@ -89,11 +89,11 @@ function product({ detail }) {
                         <div></div>
                     </div>
                 </section>
-                <div className="w-full h-full px-10 py-16 divide-y divide-solid divide-red-600">
-                    <h2 className="md:m-0 my-1 txt-main custom-montserrat font-semibold text-base md:text-xl lg:text-2xl md:py-2 align-self-baseline ">
+                <div className="w-full h-full px-10 py-16 divide-y divide-solid divide-yellow-500">
+                    <h2 className="md:m-0 my-1 txt-main custom-montserrat font-semibold text-xl md:text-2xl md:py-2 align-self-baseline ">
                         Product's description</h2>
 
-                    <article className="lg:text-sm text-xs  text-gray-800 custom-roboto overflow-ellipsis align-top font-medium md:w-3/4  min-w-full py-2">
+                    <article className="md:text-base text-sm  text-gray-800 custom-roboto overflow-ellipsis align-top font-medium md:w-3/4  min-w-full py-2">
 
                         <ReactMarkdown source={productDescription} />
                     </article>

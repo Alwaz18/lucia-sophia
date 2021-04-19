@@ -17,7 +17,7 @@ const Slider = ({ images }) => {
     return (
         <div className="center w-max">
 
-            <div className="prev text-purple-500 md:bg-none border-indigo-300 bg-opacity-25 md:p-0 p-4 font-bold center hover:shadow-xl transform transition ease-in delay-300 hover:scale-105" onClick={() => paginate(-1)}>
+            <div className="prev text-yellow-500 md:bg-none border-indigo-300 bg-opacity-25 md:p-0 p-4 font-bold center hover:shadow-xl transform transition ease-in delay-300 hover:scale-105" onClick={() => paginate(-1)}>
                 {"▶"}
             </div>
             <m.div className="min-h-full min-w-full center">
@@ -35,7 +35,7 @@ const Slider = ({ images }) => {
                 />
                 </m.div>
 
-            <div className="next text-purple-500 md:bg-none border-indigo-300 bg-opacity-40  md:p-0 p-4 center hover:shadow-xl transform transition ease-in delay-300 hover:scale-105" onClick={() => paginate(1)}>
+            <div className="next text-yellow-500 md:bg-none border-indigo-300 bg-opacity-40  md:p-0 p-4 center hover:shadow-xl transform transition ease-in delay-300 hover:scale-105" onClick={() => paginate(1)}>
                 {"▶"}
             </div>
             

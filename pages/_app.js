@@ -32,7 +32,7 @@ const handExitComplete = () => {
 function MyApp({ Component, pageProps }) {
   return (
     <ApolloProvider client={client}>
-      <section className="min-h-full min-w-full bg bg-fixed overflow-hidden">
+      <section className="min-h-full min-w-full Sbg bg-fixed overflow-hidden">
         <AnimateSharedLayout exitBeforeEnter onExitComplete={handExitComplete}>
           <Layout>
             <Component {...pageProps} />

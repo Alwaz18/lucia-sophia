@@ -5,7 +5,7 @@ import Link from "next/link";
 const ActiveLink = ({ href,children }) => {
   const router = useRouter();
   const isCurrentPath = router.pathname === href || router.asPath === href;
-  const active = isCurrentPath?'border-red-500 border-b  font-semibold ':'';
+  const active = isCurrentPath?'border-yellow-500 border-b  font-semibold ':'';
 
   (function prefetchPages() {
     if (typeof window !== "undefined") {
